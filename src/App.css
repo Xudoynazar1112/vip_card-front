@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.9);
+    padding: 20px;
+    min-height: 100vh;
+}

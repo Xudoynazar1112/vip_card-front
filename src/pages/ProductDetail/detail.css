@@ -1,0 +1,20 @@
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.detail-image {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.image-wrapper {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.order-button {
+    margin-top: 50px;
+}

@@ -1,0 +1,54 @@
+.carousel-item {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.carousel-container {
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.carousel-image {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.partner-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.partner-image {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .partner-image {
+        max-width: 100px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-image {
+        max-width: 80px;
+    }
+}

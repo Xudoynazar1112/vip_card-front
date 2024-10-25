@@ -1,0 +1,10 @@
+th, td {
+    text-align: start;
+    padding: 0.5rem;
+}
+
+td img {
+    width: 7rem;
+    max-height: 7rem;
+    border-radius: 1rem;
+}

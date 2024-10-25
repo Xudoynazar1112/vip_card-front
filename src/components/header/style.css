@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #474645;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-items {
+    background-color: black;
+    padding: 20px;
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.header-items:hover {
+    background-color: yellow;
+    color: black;
+}
+.main-logo {
+    width: 5rem;
+}
+
+@media (max-width: 768px) {
+    .header-items {
+        background-color: black;
+        color: yellow;
+        padding: 10px;
+        font-size: 14px;
+
+    }
+}
