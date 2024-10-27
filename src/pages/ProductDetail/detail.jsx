@@ -68,20 +68,22 @@ export function ProductDetailPage() {
     if (error) {
         return <div>{error}</div>;
     }
+    console.log(product);
+    
 
     return (
         <div style={{padding: '20px'}}>
-            <div className={'main-wrapper'}>
-                <div className={'image-wrapper'}>
+            <div className='flex justify-around'>
+                <div>
                     <img src={product.image} className={'detail-image'}/>
                 </div>
-                <div className={'content'}>
-                    <h1>Maxsulot nomi: {product.name}</h1>
-                    <h1>Narxi: {product.price}</h1>
-                    <h1>Maxsulot soni: {product.stock}</h1>
-                    <p>Maxsulot haqida malumot: {product.definition}</p>
+                <div className='text-xl'>
+                    <h1>Maxsulot nomi: <i>{product.name}</i></h1>
+                    <h1>Narxi: <i>{product.price}</i></h1>
+                    <h1>Maxsulot soni: <i>{product.stock}</i></h1>
+                    <p>Maxsulot haqida malumot: <i>{product.definition}</i></p>
 
-                    <Button onClick={showModal} className={'order-button'} type={"primary"}>
+                    <Button onClick={showModal} className='text-xl py-5 mt-20' type={"primary"}>
                         Buyurtma qilish
                     </Button>
                     <Modal title="Buyurtma qilish" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
